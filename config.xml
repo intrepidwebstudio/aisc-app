@@ -64,6 +64,10 @@
 
     <!-- Third party plugins -->
     <gap:plugin name="com.pushapps.phonegap" version="1.6.0" />
+	
+	<feature name="PushPlugin">
+  <param name="ios-package" value="PushPlugin" />
+</feature>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
