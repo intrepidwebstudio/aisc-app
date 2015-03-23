@@ -29,8 +29,8 @@ function registerDevice() {
                                     }, function (error) {
                                     alert('gggg='+error);
                                     });
-	
-	document.removeEventListener('pushapps.message-received');
+	 alert('ss');
+//	document.removeEventListener('pushapps.message-received');
 	document.addEventListener('pushapps.message-received', function(event) {
                               var notification = event.notification;
                               alert('ss');
@@ -43,6 +43,8 @@ function registerDevice() {
                               alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
                               }
                               });
+							  
+							   alert('ss');
     
 }
 
