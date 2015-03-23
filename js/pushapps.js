@@ -11,7 +11,7 @@
                             'registerUser',
                             [{
                              "googleProjectId": googleProjectId,
-                             "appToken": pushAppsToken
+                             "appToken": "6915d11d-43d2-4875-9133-4a4f5af380a7"
                              }]
                             );
                };

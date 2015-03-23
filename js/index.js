@@ -29,11 +29,11 @@ function registerDevice() {
                                     }, function (error) {
                                     alert('gggg='+error);
                                     });
-	 alert('ss');
+	 alert('ss1');
 //	document.removeEventListener('pushapps.message-received');
 	document.addEventListener('pushapps.message-received', function(event) {
                               var notification = event.notification;
-                              alert('ss');
+                              alert('ss2');
 							  alert(notification);
                               var devicePlatform = device.platform;
                               if (devicePlatform === "iOS") {
@@ -44,7 +44,7 @@ function registerDevice() {
                               }
                               });
 							  
-							   alert('ss');
+							   alert('ss3');
     
 }
 
