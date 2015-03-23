@@ -18,7 +18,7 @@
  */
 
 var GOOGLE_PROJECT_ID = "";
-var PUSHAPPS_APP_TOKEN = "6915d11d-43d2-4875-9133-4a4f5af380a7";
+var PUSHAPPS_APP_TOKEN = "c293619d-b1f1-4f01-80dd-da9e46dc3d8d";
 
 /**
  * Register current device with PushApps
