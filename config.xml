@@ -69,7 +69,16 @@
   <param name="ios-package" value="PushPlugin" />
 </feature>
 
+	<feature name="PushPlugin">
+  <param name="ios-package" value="CDVPushApps.m" />
+</feature>
+	<feature name="PushPlugin">
+  <param name="ios-package" value="CDVPushApps.h" />
+</feature>
 
+<feature name="PushPlugin">
+  <param name="ios-package" value="CDVPushApps" />
+</feature>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
