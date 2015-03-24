@@ -63,68 +63,13 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
-    <!--<gap:plugin name="com.pushapps.phonegap" version="1.6.0" />-->
+    <gap:plugin name="com.pushapps.phonegap" version="1.6.0" />
 	
 	<feature name="PushPlugin">
   <param name="ios-package" value="PushPlugin" />
 </feature>
 
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.pushapps.phonegap"
-    version="1.6.0">
-    
-    <name>PushApps - Push Notification Plugin</name>
-    
-    <description>PushApps Push Notification Plugin for PhoneGap/Cordova</description>
-    
-    <author>PushApps</author>
-    
-    <keywords>pushapps,push,notification,pushnotification</keywords>
-    
-    <license>Apache 2.0</license>
-    
-    <engines>
-        <engine name="cordova" version=">=3.3.0" />
-    </engines>
-    
-    <!-- android -->
-    
-    
-    <!-- ios -->
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="PushAppsPlugin">
-                <param name="ios-package" value="CDVPushApps" />
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-        
-        <js-module src="www/pushapps.js" name="PushApps">
-            <clobbers target="PushNotification" />
-        </js-module>
-        
-        <config-file>
-            <access origin="*.pushapps.mobi" />
-        </config-file>
-        
-        <header-file src="src/ios/CDVPushApps.h" />
-        <source-file src="src/ios/CDVPushApps.m" />
-        
-        <header-file src="src/ios/AppDelegate+PushApps.h" />
-        <source-file src="src/ios/AppDelegate+PushApps.m" />
-        
-        <!-- PushApps framework -->
-        <header-file src="src/ios/PushApps.framework/Versions/A/Headers/PushApps.h" target-dir="ios"/>
-        <header-file src="src/ios/PushApps.framework/Versions/A/Headers/PushAppsManager.h" target-dir="ios"/>
-        <source-file src="src/ios/PushApps.framework/Versions/A/PushApps" framework="true"/>
-        
-        <!-- System frameworks -->
-        <framework src="Foundation.framework" weak="true" />
-        <framework src="UIKit.framework" weak="true" />
-    </platform>
 
-</plugin>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
