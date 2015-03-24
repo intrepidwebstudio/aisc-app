@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml  -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.inpws.aisc"  
+        id        = "com.inpws.aiscappnub"  
         version   = "1.0.0">
 
     <name>PushApps - Phonegap Build Example App</name>
@@ -65,20 +65,6 @@
     <!-- Third party plugins -->
     <gap:plugin name="com.pushapps.phonegap" version="1.6.0" />
 	
-	<feature name="PushPlugin">
-  <param name="ios-package" value="PushPlugin" />
-</feature>
-
-	<feature name="PushPlugin">
-  <param name="ios-package" value="CDVPushApps.m" />
-</feature>
-	<feature name="PushPlugin">
-  <param name="ios-package" value="CDVPushApps.h" />
-</feature>
-
-<feature name="PushPlugin">
-  <param name="ios-package" value="CDVPushApps" />
-</feature>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />

@@ -18,7 +18,7 @@
  */
 
 var GOOGLE_PROJECT_ID = "";
-var PUSHAPPS_APP_TOKEN = "6915d11d-43d2-4875-9133-4a4f5af380a7 ";
+var PUSHAPPS_APP_TOKEN = "6f747f13-5c54-41f0-84c5-892d4c0ffdf6";
 
 /**
  * Register current device with PushApps
@@ -30,11 +30,9 @@ function registerDevice() {
                                     alert('gggg='+error);
                                     });
 	 alert('ss1');
-//	document.removeEventListener('pushapps.message-received');
+	document.removeEventListener('pushapps.message-received');
 	document.addEventListener('pushapps.message-received', function(event) {
                               var notification = event.notification;
-                              alert('ss2');
-							  alert(notification);
                               var devicePlatform = device.platform;
                               if (devicePlatform === "iOS") {
                               
@@ -167,3 +165,21 @@ var app = {
         registerDevice();
     }
 };
+
+
+
+
+	document.removeEventListener('pushapps.message-received');
+	document.addEventListener('pushapps.message-received', function(event) {
+                              var notification = event.notification;
+                              alert('ss2');
+							  alert(notification);
+                              var devicePlatform = device.platform;
+                              if (devicePlatform === "iOS") {
+                              
+                              alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+                              } else {
+                              alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+                              }
+                              });
+	
